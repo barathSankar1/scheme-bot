@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+					{% if act=="1" %}
+					<h2 style="color:#0033CC">Preprocessing</h2>
+						<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/process2?act=2';
+}, 6000);
+</script>
+						{% elif act=="2" %}
+						<h2 style="color:#0033CC">Feature Extraction</h2>
+						<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/process2?act=3';
+}, 6000);
+</script>
+						
+						{% elif act=="3" %}
+						<h2 style="color:#0033CC">Random Forest - Classification</h2>
+						
+						<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/process2?act=4';
+}, 6000);
+</script>
+						{% elif act=="4" %}
+						
+						<h2 style="color:#0033CC">Model Build and Trained</h2>
+						
+						<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.parent.location.href= '/add_query';
+}, 6000);
+</script>
+						{% endif %}
+						
+</body>
+</html>
